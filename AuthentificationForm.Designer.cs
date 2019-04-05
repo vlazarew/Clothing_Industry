@@ -52,7 +52,7 @@
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 1;
-            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.Text = "Выйти";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
@@ -89,7 +89,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Пароль";
             // 
-            // RegistrationForm
+            // AuthentificationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +100,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
-            this.Name = "RegistrationForm";
+            this.Name = "AuthentificationForm";
             this.Text = "Аутентификация";
             this.ResumeLayout(false);
             this.PerformLayout();
