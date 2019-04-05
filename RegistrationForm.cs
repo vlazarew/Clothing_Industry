@@ -24,6 +24,25 @@ namespace Clothing_Industry
             textBoxLogin.Focus();
         }
 
+        private bool CheckServer()
+        {
+            string connString = "Server=localhost;charset=UTF8;Database=main_database;port=" + 3306 + ";user id=test_server";
+            MySqlConnection connection = new MySqlConnection(connString);
+
+            try
+            {
+                connection.Open();
+                connection.Close();
+                return true;
+            }
+            catch
+            {
+                MessageBox.Show(this, "Нет подключения к серверу. Вероятно последний находится в выключенном состоянии",
+                    "Ошибка соединения с сервером", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -31,6 +50,11 @@ namespace Clothing_Industry
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
+            if (!CheckServer())
+            {
+                return;
+            }
+
             username = textBoxLogin.Text;
             password = textBoxPassword.Text;
 
