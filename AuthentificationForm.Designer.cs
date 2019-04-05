@@ -1,6 +1,6 @@
 ﻿namespace Clothing_Industry
 {
-    partial class RegistrationForm
+    partial class AuthentificationForm
     {
         /// <summary>
         /// Required designer variable.
@@ -101,7 +101,7 @@
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Name = "RegistrationForm";
-            this.Text = "RegistrationForm";
+            this.Text = "Аутентификация";
             this.ResumeLayout(false);
             this.PerformLayout();
 
