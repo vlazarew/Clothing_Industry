@@ -36,13 +36,6 @@ namespace Clothing_Industry
 
             string connString = "Server=localhost;charset=UTF8;Database=main_database;port=" + 3306 + ";user id=" + username + ";password=" + password;
 
-            string host = "localhost";
-            string database = "main_database";
-            int port = 3306;
-
-            /*String connString = "Server=" + host + ";Database=" + database
-               + ";port=" + port + ";User Id=" + username + ";password=" + password;*/
-
             MySqlConnection connection = new MySqlConnection(connString);
             try
             {
@@ -51,8 +44,6 @@ namespace Clothing_Industry
                 Form MainForm = new MainForm();
                 this.Hide();
                 MainForm.Show();
-                
-                //Application.Run(new MainForm());
             }
             catch
             {
