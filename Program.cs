@@ -16,7 +16,7 @@ namespace Clothing_Industry
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistrationForm());
+            Application.Run(new AuthentificationForm());
         }
     }
 }
