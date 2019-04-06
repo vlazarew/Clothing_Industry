@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace Clothing_Industry
 {
-    public partial class RegistrationForm : Form
+    public partial class AuthentificationForm : Form
     {
         private string username;
         private string password;
 
-        public RegistrationForm()
+        public AuthentificationForm()
         {
             InitializeComponent();
             AcceptButton = buttonOK;
